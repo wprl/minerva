@@ -1,0 +1,39 @@
+{
+  "name": "minerva",
+  "version": "0.0.1",
+  "description": "Minerva",
+  "main": "app.js",
+  "scripts": {
+    "test": "NODE_CONFIG_DIR=./example/config gulp build"
+  },
+  "author": "William Riley-Land",
+  "dependencies": {
+    "brfs": "^1.2.0",
+    "browserify": "^5.11.2",
+    "browserify-shim": "^3.8.0",
+    "envify": "^1.2.1",
+    "gulp-ignore": "^1.2.1",
+    "gulp-rework": "^1.0.2",
+    "rework-import": "^1.2.1",
+    "rework-plugin-url": "^1.0.1",
+    "spock": "^0.3.3",
+    "through2": "^0.6.3",
+    "uglifyify": "^2.4.0"
+  },
+  "keywords": [
+    "html5",
+    "web component",
+    "build",
+    "gulpplugin"
+  ],
+  "license": "LGPLv3",
+  "devDependencies": {
+    "config": "^1.12.0",
+    "connect": "^3.3.5",
+    "gulp": "^3.8.11",
+    "gulp-merge": "^0.1.0",
+    "mkdirp": "^0.5.0",
+    "rimraf": "^2.3.2",
+    "wainwright": "^0.5.2"
+  }
+}

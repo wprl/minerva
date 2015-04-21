@@ -1,0 +1,27 @@
+{
+  "name": "minerva-example",
+  "description": "Minerva Example",
+  "main": "",
+  "scripts": {
+    "postinstall": "./node_modules/.bin/napa install"
+  },
+  "private": true,
+  "author": "William Riley-Land",
+  "dependencies": {
+    "napa": "^1.0.1"
+  },
+  "napa": {
+    "platform": "Polymer/platform#9c1954841445c390b2443ee65422ba487bdc5070",
+    "polymer": "Polymer/polymer#6dd5ffb6d1f83e82044aea7d45cf5f53c6493500"
+  },
+  "browserify-shim": {
+    "platform": "global:Platform",
+    "polymer": {
+      "exports": "global:Polymer",
+      "depends": [
+        "platform"
+      ]
+    }
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,17 @@
+{
+  "site": {
+    "project": "",
+    "title": "",
+    "description": "",
+    "author": "",
+    "keywords": "",
+    "host": "localhost",
+    "port": 8012,
+    "url": "http://localhost:8012",
+    "created": 2014
+  },
+  "build": {
+    "path": "./.build",
+    "sourceMaps": false
+  }
+}
