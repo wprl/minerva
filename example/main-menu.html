@@ -3,9 +3,18 @@
   <template>
     <div>Main Menu</div>
   </template>
-  <script>
-    // TODO maybe this has to be another file.  Otherwise normal script tags wouldn't work?
+  <!-- Support also <script type="text/module"> which can be polyfilled, used instead of the proposed <module>. -->
+  <module>
     var Polymer = require('polymer');
-    var component = module.exports = Polymer('dashboard-screen');
-  </script>
+    var component = module.exports = Polymer('main-menu');
+  </module>
+  <!--
+    <module> should be transformed into something like:
+
+    <script>
+      require('./main-menu-module-1.js');
+    </script>
+
+    The genererated .js files should be accessible from any other module via require.
+  -->
 </polymer-element>
